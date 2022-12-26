@@ -19,7 +19,7 @@ export default function Profile() {
   useEffect(() => {
     axios({
       method: "GET",
-      url: `http://localhost:5000/api/developers/${path}`,
+      url: `https://zany-teal-marlin-sari.cyclic.app/api/developers/${path}`,
       headers: {
         "Content-Type": "application/json",
       },
@@ -30,7 +30,7 @@ export default function Profile() {
 
   const handleDelete = async () => {
     try {
-      await axios.delete(`http://localhost:5000/api/developers/${path}`);
+      await axios.delete(`https://zany-teal-marlin-sari.cyclic.app/api/developers/${path}`);
       window.location.replace("/");
     } catch (err) {}
   };

@@ -19,7 +19,7 @@ export default function AddDevPage() {
     console.log(github);
     setError(false);
     try {
-      const res = await axios.post("http://localhost:5000/api/developers", {
+      const res = await axios.post("https://zany-teal-marlin-sari.cyclic.app/api/developers", {
         github,
         linkedin,
         codechef,

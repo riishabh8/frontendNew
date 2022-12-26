@@ -12,7 +12,7 @@ function Home() {
 
   useEffect(() => {
     const fetchPosts = async () => {
-      const res = await axios.get("http://localhost:5000/api/developers");
+      const res = await axios.get("https://zany-teal-marlin-sari.cyclic.app/api/developers");
       setProfiles(res.data);
     };
     fetchPosts();
